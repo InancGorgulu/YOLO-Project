@@ -24,19 +24,17 @@ This folder provides the tools and source code necessary for integrating and run
 
 ## Getting Started
 ### 1. Training YOLO Models
-To train your custom YOLO model, navigate to the yolov5_training/ directory and follow the steps outlined in the README.md. This section includes:
+To train your custom YOLO model, navigate to the `yolov5_training/` directory and follow the steps outlined in the README.md. This section includes:
 
-Setting up the Google Colab environment with the necessary dependencies. 
-Preparing your dataset and defining the structure in data.yaml.
-Running the training script with customized parameters.
+* Setting up the Google Colab environment with the necessary dependencies. 
+* Preparing your dataset and defining the structure in data.yaml.
+* Running the training script with customized parameters.
 
 ### 2. Using Trained Models in C++
-Once your model is trained and validated, you can use it in a C++ environment. The cpp_inference/ directory contains everything you need to get started, including:
+Once your model is trained and validated, you can use it in a C++ environment. The `cpp_inference/` directory contains everything you need to get started, including:
 
-Converting the PyTorch model to ONNX or TensorRT.
-Compiling and running the inference code to test the model in real-time applications.
-Documentation
-Detailed documentation is provided within each directory, outlining specific steps for training, converting, and deploying the models. You can also find additional resources and tutorials in the docs/ folder.
+* Converting the PyTorch model to ONNX or TensorRT.
+* Compiling and running the inference code to test the model in real-time applications.
 
 ## Contributions
 
@@ -44,7 +42,7 @@ Contributions to this repository are welcome! If you have improvements or new fe
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License.
 
 ## Contact
 For questions or further assistance, feel free to reach out via GitHub Issues or contact the repository maintainers.
