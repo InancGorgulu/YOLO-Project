@@ -5,9 +5,9 @@ This repository contains all the necessary components for training a custom YOLO
 ## Repository Structure
 
 - ### `colaboratory/`
-  Contains the (`YOLO_training.ipynb`) that can be used directly in Google Colab. It provides step-by-step instructions for setting up the environment, loading the dataset, configuring the model, and training.
+  Contains the (`yolov5_training.ipynb`) that can be used directly in Google Colab. It provides step-by-step instructions for setting up the environment, loading the dataset, configuring the model, and training.
 
-- ### `configurations/`
+- ### `.yaml_files/`
   - **`custom_yolov5.yaml`**: This file defines the custom architecture for the YOLOv5 model, such as the number of layers, channels, and anchor boxes.
   - **`data.yaml`**: Specifies the paths to the training, validation, and test datasets. It also includes class names and the number of classes.
 
@@ -15,13 +15,15 @@ This repository contains all the necessary components for training a custom YOLO
   Contains (`README.md`) related to the dataset used in this project. This document describes the dataset structure, source information, and preprocessing steps applied before training.
 
 - ### `pretrained_weights/`
-  Contains the pre-trained weights (`yolov5s.pt`) for the YOLOv5 model. These weights can be used as a starting point for transfer learning, which can speed up the training process and improve accuracy.
+  Contains the pre-trained weights (`best.pt`, `last.pt`) for the YOLOv5 model. These weights can be used as a starting point for transfer learning, which can speed up the training process and improve accuracy.
+
+  Note: _These weights were inferred from a drone dataset._
 
 ### Training Configuration Tips
 
 - Ensure that the `nc` parameter in `custom_yolov5s.yaml` matches the number of classes in your dataset defined in `data.yaml` and check the path definitions.
 - Adjust the `batch size` and `epochs` according to Google Colab GPU capabilities (or local GPU) to prevent memory issues.
-- Customize the `anchors` parameter in the model configuration file to better suit the object sizes in your dataset.
+- Customize the `anchors` parameter in the `custom_yolov5.yaml` file to better suit the object sizes in your dataset.
 
 ## Example Training Command
 
