@@ -30,33 +30,38 @@ Roboflow is a powerful tool for creating, annotating, and managing datasets for 
 
 1. **Create a Roboflow Account**: Sign up for a free [Roboflow account](https://roboflow.com/).
 2. **Select or Upload Your Dataset**:
-   - Browse through public datasets or upload your own images 
+   - Browse through public datasets or upload your own images. 
    - Annotate the images using the Roboflow interface or utilize pre-annotated datasets.
 3. **Generate Dataset and Export**:
    - Configure the dataset by selecting the train-test split ratio.
    - Choose the export format as `YOLO`.
 4. **Download the Dataset**:
-_Use the Roboflow API for downloading the dataset in your environment._
-   - Press the "Show download code" to get API_KEY provided by Roboflow to download your dataset in the appropriate format in a cloud machine such as Google Colab.
-_or_
-_Download directly the required dataset on your local machine_
+
+_Use the Roboflow API for downloading the dataset in your environment:_ 
+
+- Press the "Show download code" to get API_KEY provided by Roboflow to download your dataset in the appropriate format in a cloud machine such as Google Colab.
+
+ _or_
+  
+_Download directly the required dataset on your local machine:_
+     
 - Press the "Download zip to computer" to get your dataset in the appropriate format.
 
 
 ### Using of the Roboflow API
-
+```ipython
 !pip install roboflow 
-_This is an IPython command that can be run in environments like Google Colab or Jupyter Notebook. To run it in your terminal, remove the '!' prefix. The other codes included in below can be run in your Python Shell or Python Script._
+# This is an IPython command that can be run in environments like Google Colab or Jupyter Notebook. To run it in your terminal, remove the '!' prefix. The other codes included in below can be run in your Python Shell or Python Script.
 
 from roboflow import Roboflow
 rf = Roboflow(api_key="YOUR_API_KEY")
-_You have to use your private API Key to provide access to your Roboflow account in your code._
+# You have to use your private API Key to provide access to your Roboflow account in your code.
 
 project = rf.workspace("my-workshop-xttfp").project("my-project-name-zzqav")
 version = project.version(3)
 
 dataset = version.download("yolov5")
-                
+```            
 
 ## Uploading Datasets to Google Colab
 
