@@ -46,7 +46,7 @@ Usage: More epochs allow the model to learn better, but too many can lead to ove
 
 --data /content/data.yaml:
 Specifies the path to the data.yaml file, which contains information about the dataset, such as the path to the training, validation, and test images, as well as class names and the number of classes.
-Usage: This file is crucial for configuring the training data paths and class definitions.
+Usage: This file is crucial for configuring the training data paths and class definitions. You need to configure this file with the current dataset path and other necessary parameters.
 
 --cfg /content/yolov5/models/custom_yolov5s.yaml:
 Provides the path to the custom model configuration file (.yaml) for YOLOv5. This file contains the architecture details of the model such as the number of layers, channels, and anchor boxes.
@@ -54,10 +54,10 @@ Usage: Use this parameter to define a custom model structure or modify an existi
 
 --weights '':
 Specifies the path to the weights file. Leaving it empty ('') means that no pre-trained weights are loaded and the model will be trained from scratch.
-Usage: You can use a path to pre-trained weights (e.g., yolov5s.pt) to perform transfer learning, or leave it empty to start with random weights.
+Usage: You can use a path to pre-trained weights (e.g., yolov5s.pt, best.pt, last.pt) to perform transfer learning, or leave it empty to start with random weights.
 
 --name yolov5s_results:
-Sets the name of the experiment. The results will be saved in a folder named yolov5s_results.
+Sets the name of the experiment. The results will be saved in a folder named yolov5s_results in this case.
 Usage: Use a descriptive name to organize your experiments, making it easier to track and compare different training runs.
 
 --cache:
