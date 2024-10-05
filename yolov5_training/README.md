@@ -8,7 +8,7 @@ This repository contains all the necessary components for training a custom YOLO
   Contains the (`yolov5_training.ipynb`) that can be used directly in Google Colab. It provides step-by-step instructions for setting up the environment, loading the dataset, configuring the model, and training.
 
 - ### `.yaml_files/`
-  - **`custom_yolov5.yaml`**: This file defines the custom architecture for the YOLOv5 model, such as the number of layers, channels, and anchor boxes.
+  - **`custom_yolov5s.yaml`**: This file defines the custom architecture for the YOLOv5 model, such as the number of layers, channels, and anchor boxes.
   - **`data.yaml`**: Specifies the paths to the training, validation, and test datasets. It also includes class names and the number of classes.
 
 - ### `dataset/`
