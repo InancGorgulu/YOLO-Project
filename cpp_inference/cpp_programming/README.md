@@ -4,4 +4,4 @@ After we get the .onnx file related to our weight, we have to install the requir
 
 _Note: If you want to do inference on your GPU, you have to install the CUDA library as well, but this guide doesn't include the required steps to use the project on the GPU._
 
-The *main.cpp* file contains a detailed description with comment lines.
+
