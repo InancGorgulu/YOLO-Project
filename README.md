@@ -20,7 +20,7 @@ The repository is organized into separate folders, each dedicated to different a
 This folder contains all the resources needed for training YOLO models using YOLOv5. 
 
 ### cpp_inference/
-This folder provides the tools and source code necessary for integrating and running the trained YOLO model in a C++ environment.
+This folder provides the tools and source code necessary for integrating and running the trained YOLO model in a C++ environment with OpenCV library.
 
 ## Getting Started
 ### 1. Training YOLO Models
@@ -33,12 +33,8 @@ To train your custom YOLO model, navigate to the `yolov5_training/` directory an
 ### 2. Using Trained Models in C++
 Once your model is trained and validated, you can use it in a C++ environment. The `cpp_inference/` directory contains everything you need to get started, including:
 
-* Converting the PyTorch model to ONNX or TensorRT.
-* Compiling and running the inference code to test the model in real-time applications.
-
-## Contributions
-
-Contributions to this repository are welcome! If you have improvements or new features to propose, please open a pull request or submit an issue for discussion.
+* Converting the PyTorch(_YOLOv5_) model to ONNX.
+* Compiling and running the inference code to test the model with images.
 
 ## License
 
